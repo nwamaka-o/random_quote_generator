@@ -1,0 +1,14 @@
+# Virtual Environment
+venv/
+.env/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# PyCharm project files
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
