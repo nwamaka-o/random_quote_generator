@@ -37,7 +37,7 @@ def main():
     print("Welcome to the Random Quote Generator!")
     print("Enjoy inspirational quotes or exit anytime.\n") # Call the random_quote function
 
-    # Infinite loop for interaction
+    # Infinite loop to keep offering quotes until the user exits
     while True:
         print("\nHere's your quote:")
         print(f"\"{random_quote(history)}\"")
