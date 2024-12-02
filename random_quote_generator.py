@@ -19,7 +19,7 @@ def random_quote():
 
 
 def main():
-    print("Welcome to the Random Quote Generator!")
+    print("Welcome to the Random Quote Generator! designed by Nwamaka Okalla")
 
     # Infinite loop to keep offering quotes until the user exits
     while True:
