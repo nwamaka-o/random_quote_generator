@@ -14,7 +14,7 @@ The **Random Quote Generator** is a Python program that displays a random inspir
    ```bash
    git clone https://github.com/username/random-quote-generator.git
    ```
-2. Navigate to the project folder:
+2. Navigate to the project folder: 
    ```bash
    cd random-quote-generator
    ```
@@ -24,9 +24,9 @@ The **Random Quote Generator** is a Python program that displays a random inspir
    ```
 
 ## Usage
-1. Run the program:
+1. Run the program: There are two programs: `random_quote_generator.py` and `random_quote_generator_improved.py` which shows the additional efforts to improve the program 
    ```bash
-   python random_quote_generator.py
+   python random_quote_generator.py 
    ```
 2. Follow the prompts:
    - Type `yes` to get another quote.
@@ -34,7 +34,7 @@ The **Random Quote Generator** is a Python program that displays a random inspir
 
 ## Example Output
 ```plaintext
-Welcome to the Random Quote Generator!
+Welcome to the Random Quote Generator! designed by Nwamaka Okalla
 
 Here's your quote:
 "The best way to predict the future is to invent it. – Alan Kay"
