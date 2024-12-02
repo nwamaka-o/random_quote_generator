@@ -34,7 +34,7 @@ def main():
     history = []  # Initialize an empty list to track shown quotes
 
     # Welcome message
-    print("Welcome to the Random Quote Generator!")
+    print("Welcome to the Random Quote Generator! designed by Nwamaka Okalla")
     print("Enjoy inspirational quotes or exit anytime.\n") # Call the random_quote function
 
     # Infinite loop to keep offering quotes until the user exits
