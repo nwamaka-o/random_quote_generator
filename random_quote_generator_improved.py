@@ -14,33 +14,50 @@ quotes = [
 
 def random_quote(history):
     """Selects a random quote, ensuring no immediate repetition."""
+     # Filter out quotes that are already in the history
     remaining_quotes = [q for q in quotes if q not in history]
+
+    # If all quotes have been shown, reset the history
     if not remaining_quotes:  # All quotes shown, reset history
-        history.clear()
-        remaining_quotes = quotes[:]
+        history.clear() # Clear the history list
+        remaining_quotes = quotes[:] # Reset to the full quotes list
+
+    # Randomly select a quote from the remaining list
     selected_quote = random.choice(remaining_quotes)
+
+    # Add the selected quote to the history for tracking
     history.append(selected_quote)
-    return selected_quote
+    return selected_quote # Return the selected quote
 
 
 def main():
-    history = []  # To track shown quotes
-    print("Welcome to the Random Quote Generator!")
-    print("Enjoy inspirational quotes or exit anytime.\n")
+    history = []  # Initialize an empty list to track shown quotes
 
+    # Welcome message
+    print("Welcome to the Random Quote Generator!")
+    print("Enjoy inspirational quotes or exit anytime.\n") # Call the random_quote function
+
+    # Infinite loop for interaction
     while True:
         print("\nHere's your quote:")
         print(f"\"{random_quote(history)}\"")
+
+        # Prompt user for input
         print("\nWould you like another quote? (yes/no)")
 
+         # Get user input and normalize to lowercase
         user_input = input("> ").strip().lower()
+
+        # Check user's decision
         if user_input == 'no':
+            # Exit the program with a farewell message
             print("\nThank you for using the Random Quote Generator. Stay inspired!")
             print("Credits: All quotes compiled from various authors for inspiration.")
-            break
+            break # Exit the loop
         elif user_input != 'yes':
+            # Handle invalid inputs
             print("Invalid input. Please type 'yes' or 'no'.")
 
 
 if __name__ == "__main__":
-    main()
+    main() # Entry point of the program
