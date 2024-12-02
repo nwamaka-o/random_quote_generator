@@ -24,11 +24,16 @@ The **Random Quote Generator** is a Python program that displays a random inspir
    ```
 
 ## Usage
-1. Run the program: There are two programs: `random_quote_generator.py` and `random_quote_generator_improved.py` which shows the additional efforts to improve the program 
+1. Run the program: There are two programs: `random_quote_generator.py` and `random_quote_generator_improved.py` which shows the additional efforts to improve the program.
+   To run the default program use:
    ```bash
    python random_quote_generator.py 
    ```
-2. Follow the prompts:
+   To run the improved program use:
+      ```bash
+   python random_quote_generator_improved.py 
+   ```
+3. Follow the prompts:
    - Type `yes` to get another quote.
    - Type `no` to exit the program.
 
