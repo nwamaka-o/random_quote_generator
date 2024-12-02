@@ -1,4 +1,4 @@
-import random
+import random # Importing the random module to select quotes randomly
 
 # List of inspirational quotes
 quotes = [
@@ -14,23 +14,27 @@ quotes = [
 
 def random_quote():
     """Selects and returns a random quote from the list."""
+    # Use random.choice to select a random item from the quotes list
     return random.choice(quotes)
 
 
 def main():
     print("Welcome to the Random Quote Generator!")
+
+    # Infinite loop to keep offering quotes until the user exits
     while True:
         print("\nHere's your quote:")
-        print(f"\"{random_quote()}\"")
-        print("\nWould you like another quote? (yes/no)")
+        print(f"\"{random_quote()}\"") # Display a random quote
+        print("\nWould you like another quote? (yes/no)") # Prompt user for input
 
+        # Get user input, stripping whitespace and converting to lowercase
         user_input = input("> ").strip().lower()
-        if user_input == 'no':
+        if user_input == 'no': # Exit the program if the user says 'no'
             print("\nThank you for using the Random Quote Generator. Stay inspired!")
             break
-        elif user_input != 'yes':
+        elif user_input != 'yes': # Handle invalid input
             print("Invalid input. Please type 'yes' or 'no'.")
 
-
+# Entry point of the program
 if __name__ == "__main__":
     main()
